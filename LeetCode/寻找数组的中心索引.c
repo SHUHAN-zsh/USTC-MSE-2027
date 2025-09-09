@@ -58,30 +58,30 @@ int pivotIndex(int* nums, int numsSize) {
     return -1;
 }
 
-/**
- * 主函数 main
- * 作用：程序的入口，用于测试 pivotIndex 函数是否正确
- * 注意：每个 C 程序必须有且只有一个 main 函数
- */
-int main() {
-    // 定义一个测试数组：[1, 7, 3, 6, 5, 6]
-    // 题目期望结果：下标 3（因为 1+7+3 = 11，5+6 = 11）
-    int nums[] = { 1, 7, 3, 6, 5, 6 };
-
-    // 计算数组的元素个数
-    // sizeof(nums) 是整个数组占用的字节数
-    // sizeof(nums[0]) 是一个元素占用的字节数
-    // 相除就得到元素个数
-    int numsSize = sizeof(nums) / sizeof(nums[0]);
-
-    // 调用 pivotIndex 函数，传入数组和长度
-    // 函数会返回中心下标，或 -1
-    int result = pivotIndex(nums, numsSize);
-
-    // 使用 printf 输出结果
-    // %d 表示输出一个整数
-    printf("中心下标是：%d\n", result);
-
-    // main 函数正常结束，返回 0 表示程序成功执行
-    return 0;
-}
+///**
+// * 主函数 main
+// * 作用：程序的入口，用于测试 pivotIndex 函数是否正确
+// * 注意：每个 C 程序必须有且只有一个 main 函数
+// */
+//int main() {
+//    // 定义一个测试数组：[1, 7, 3, 6, 5, 6]
+//    // 题目期望结果：下标 3（因为 1+7+3 = 11，5+6 = 11）
+//    int nums[] = { 1, 7, 3, 6, 5, 6 };
+//
+//    // 计算数组的元素个数
+//    // sizeof(nums) 是整个数组占用的字节数
+//    // sizeof(nums[0]) 是一个元素占用的字节数
+//    // 相除就得到元素个数
+//    int numsSize = sizeof(nums) / sizeof(nums[0]);
+//
+//    // 调用 pivotIndex 函数，传入数组和长度
+//    // 函数会返回中心下标，或 -1
+//    int result = pivotIndex(nums, numsSize);
+//
+//    // 使用 printf 输出结果
+//    // %d 表示输出一个整数
+//    printf("中心下标是：%d\n", result);
+//
+//    // main 函数正常结束，返回 0 表示程序成功执行
+//    return 0;
+//}
